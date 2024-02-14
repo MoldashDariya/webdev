@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.todo-logo {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: left;
+}
+
+
+
+.todo {
+    text-align: center;
+    color: black;
+    margin: 50px;
+    font-size: 0.7cm;
+}
+
+.main2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-box {
+    width: 500px;
+    padding: 5px;
+    border: 0.1px solid grey;
+} 
+
+.addTask {
+    margin-left: 10px;
+    height: 30px;
+    width: 40px;
+    color: white;
+    background-color:cornflowerblue;
+}
+
+
+.tasks-container ul li {
+    border: 0.1px solid grey;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.tasks-container ul li input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+.delete-task {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.completed-task span{
+    text-decoration: line-through; 
+}
