@@ -1,0 +1,17 @@
+<h1 style="text-align: center">{{category}}</h1>
+<div class="products-list" [@fadeInOut]>
+
+    <div class="product" *ngFor="let p of products">
+
+        <app-product-item [product]=p (remove)="onProductRemove($event)"></app-product-item>
+
+
+    </div>
+</div>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
