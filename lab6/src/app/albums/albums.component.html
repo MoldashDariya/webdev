@@ -1,0 +1,17 @@
+<fieldset class="action-fields">
+  <input type="text" [(ngModel)]="newAlbum.title" placeholder="Title of a new Album" class = "input-data" (ngModelChange) = "inputFilter()">
+  <button (click)="createAlbum()" class = "add-album">Add album</button>
+</fieldset>
+
+
+<ul>
+  <li *ngFor="let album of albums" class = "albums-list" >
+      <a routerLink="/albums/{{album.id}}">
+          {{album.id}}) {{album.title}}
+      </a>
+      <button (click)="deleteAlbum(album.id)" class = "delete-button">
+          Delete
+      </button>
+
+  </li>
+</ul>
