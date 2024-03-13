@@ -1,0 +1,35 @@
+<div *ngIf="loaded">
+
+  <div class="top-buttons">
+    <a routerLink = "/albums">
+      <img src="https://i.pinimg.com/originals/92/f5/20/92f5206581bb05b3b621f5b752e8bfb6.png" class="back">
+    </a>
+  
+    <fieldset class="action-fields">
+      <input type="text" [(ngModel)]="newTitle" placeholder="Type in new album title" class = "input-data">
+      <button (click)="updateAlbumTitle()" class = "save-data">Save</button>
+    </fieldset>
+  </div>
+
+
+  <div class = "album-detail">
+    <div>
+      <h2>Album #{{album.id}}</h2>
+      <h3>{{album.title}}</h3>
+    </div>
+    <a routerLink="/albums/{{album.id}}/photos" id="photos-link">
+      View Photos>
+    </a>
+  </div>  
+
+</div>
+  
+
+
+<div *ngIf="!loaded">
+  <fieldset class="action-fields">
+    <input type="text" [(ngModel)]="newTitle" placeholder="Type in Updated info" class = "input-data">
+    <button (click)="updateAlbumTitle()" class = "save-data">Save</button>
+  </fieldset>
+  <h3 >Album is loading...</h3>
+</div>
