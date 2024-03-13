@@ -1,0 +1,53 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.action-fields{
+  border: none;
+  margin-left: 120px;
+}
+
+.input-data{
+  width: 50%;
+  margin-left: 120px;
+  height: 20px;
+  border-radius: 4px;
+  border: 2px solid rgb(219, 219, 219);
+}
+
+.add-album{
+  background-color: rgb(94, 9, 180);
+  color: white;
+  margin-left: 20px ;
+  height: 24px;
+  border: none;
+  border-radius: 4px;
+}
+
+.albums-list{
+  width: 80%;
+  height: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+ul{
+  list-style-type: none;
+  margin-left: 150px;
+}
+
+.delete-button{
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: brown;
+}
+
+img{
+  background-color: none;
+}
