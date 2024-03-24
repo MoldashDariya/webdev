@@ -2,6 +2,8 @@ a = int(input())
 b = int(input())
 
 if a > b:
-    print(a)
+    print(1)
+elif a < b:
+    print(2)
 else:
-    print(b)
+    print(0)
