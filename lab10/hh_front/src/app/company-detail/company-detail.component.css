@@ -1,0 +1,41 @@
+.company-info {
+  padding: 20px;
+}
+
+.company-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.company-info p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.vacancies-company {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+.list-of-vacancies {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-of-vacancies li {
+  margin-bottom: 10px;
+}
+
+.list-of-vacancies a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.list-of-vacancies a:hover {
+  text-decoration: underline;
+}
