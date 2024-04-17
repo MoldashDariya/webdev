@@ -1,0 +1,15 @@
+<app-top-bar></app-top-bar>
+
+<div class="company-info" *ngIf="company">
+  <h2>{{ company.name }}</h2>
+  <p>{{ company.description }}</p>
+  <p>{{ company.city }}</p>
+  <p>{{ company.address }}</p>
+
+  <h1 class="vacancies-company">Vacancies of this company</h1>
+  <ul class="list-of-vacancies">
+    <li *ngFor="let vacancy of vacancies">
+      <a routerLink="/vacancies/{{vacancy.id}}">{{vacancy.name}}</a>
+    </li>
+  </ul>
+</div>
